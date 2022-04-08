@@ -71,6 +71,7 @@ namespace YesAlready
             this.features.Add(new AddonJournalResultFeature());
             this.features.Add(new AddonContentsFinderConfirmFeature());
             this.features.Add(new AddonTalkFeature());
+            this.features.Add(new AddonContextIconMenuFeauture());
 
             this.configWindow = new();
             this.zoneListWindow = new();

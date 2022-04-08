@@ -114,6 +114,11 @@ namespace YesAlready
         public bool ContentsFinderOneTimeConfirmEnabled { get; set; } = false;
 
         /// <summary>
+        /// Gets or sets a value indicating whether the context icon menu is enabled.
+        /// </summary>
+        public bool ContextIconMenuEnabled { get; set; } = false;
+
+        /// <summary>
         /// Loads the configuration.
         /// </summary>
         /// <param name="configDirectory">Configuration directory.</param>

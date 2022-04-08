@@ -397,7 +397,16 @@ namespace YesAlready.Interface
             IndentedTextColored(this.shadedColor, "Automatically commence duties when ready, but only once.\nRequires Contents Finder Confirm, and disables both after activation.");
 
             #endregion
+            #region ContextIconMenu
+            var contextIconMenu = Service.Configuration.ContextIconMenuEnabled;
+            if (ImGui.Checkbox("ContextIconMenu", ref contextIconMenu))
+            {
+                Service.Configuration.ContextIconMenuEnabled = contextIconMenu;
+                Service.Configuration.Save();
+            }
 
+            IndentedTextColored(this.shadedColor, "Automatically select item when there is only one item.");
+            #endregion
             ImGui.PopID();
 
             ImGui.EndTabItem();
